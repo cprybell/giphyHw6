@@ -1,10 +1,12 @@
 var topicsArray = ["lab puppies", "soccer", "the office", "sopranos"];
 var apiKey = "IeV1JVMe4hP3QnHoYlLcIllaNyepyGOf";
 
+
 function addButton(buttonName) {
     var tempNewButton = $("<button>");
     tempNewButton.text(buttonName);
-    tempNewButton.addClass("GIF-Button");
+    tempNewButton.addClass("btn btn-light GIF-Button");
+    tempNewButton.attr("type", "button");
     tempNewButton.attr("topic", buttonName);
     $("#buttons").append(tempNewButton);
 }
